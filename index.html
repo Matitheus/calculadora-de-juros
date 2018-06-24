@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de Juros</title>
+</head>
+<body>
+
+<script type="text/javascript" src="script.js"></script>
+
+<form name="form1"> 
+<table style="margin-left: auto; margin-right: auto;" summary="Tabela de calculo" border="0" cellpadding="8"> 
+<tbody> 
+<tr> 
+<td colspan="2" style="text-align: center; background-color: rgb(217, 193, 138); border:none;" nowrap="nowrap"> 
+          <strong>Calcule a informação desejada</strong><br /> 
+          <span class="textoPequeno"><em>(Informe 3 valores e pressione o botão &#8216;Calcular&#8217; para obter o 4º.)</em></span></td> 
+</tr> 
+<tr> 
+<td style="background-color: rgb(252, 248, 239); border:none;"> 
+        <label for="meses"><em>Nº de meses:</em></label></p></td> 
+<td style="background-color: rgb(252, 248, 239); border:none;"> 
+<input name="periodo" id="meses" size="10" title="Digite o número de meses" tabindex="1" value="" type="text"> 
+      </td> 
+</tr> 
+<tr> 
+<td style="background-color: rgb(252, 248, 239); border:none;" scope="row"> 
+          <label for="juros"><em>Taxa de juros mensal:</em></label></td> 
+<td style="background-color: rgb(252, 248, 239); border:none;"> 
+<input name="juros" id="juros" size="10" tabindex="2" title="Digite taxa de juros mensal" value="" type="text">%
+             </td> 
+</tr> 
+<tr> 
+<td style="background-color: rgb(252, 248, 239); border:none;" scope="row"> 
+          <label for="prestacao"><br /> 
+          <em>Valor da prestação:
+          </p> 
+                    </em>
+          <p>          <span style="font-size: 0.8em;">(Considera-se que a 1a. prestação não seja no ato.)</span><br /> 
+          </label></td> 
+<td style="background-color: rgb(252, 248, 239); border:none;"> 
+<input name="parcela" id="prestacao" size="16" tabindex="3" title="Digite valor da prestação" value="" type="text"> 
+      </td> 
+</tr> 
+<tr> 
+<td style="background-color: rgb(252, 248, 239); border:none;" scope="row"> 
+<p>          <label for="montante"><br /> 
+          <em>Valor financiado:<br /> 
+          <span style="font-size: 0.8em;">(O Valor financiado não inclui o valor da entrada.)</span></em></label> 
+        </td> 
+<td style="background-color: rgb(252, 248, 239); border:none;"> 
+<input name="montante" size="16" tabindex="4" title="Digite o valor financiado" id="montante" value="" type="text"> 
+</td> 
+</tr> 
+<tr> 
+<td style="text-align: center; background-color: rgb(252, 248, 239); border:none;" colspan="2"> 
+<input name="Button" type="button" tabindex="5" onClick="Calcular()" onKeyPress="Calcular()" value="Calcular()">
+&nbsp;</p> 
+<input value="Limpar" onClick="Limpar()" onKeyPress="Limpar()" tabindex="6" type="button"></td> 
+</tr> 
+</tbody> 
+</table></form>
+
+</body>
+</html>
